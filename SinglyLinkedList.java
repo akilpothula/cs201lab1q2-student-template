@@ -91,6 +91,7 @@ public class SinglyLinkedList<E> {
         if(head == tail){
             head = null;
             tail = null;
+            size--;
             return ans;
         }
 
@@ -100,6 +101,7 @@ public class SinglyLinkedList<E> {
 
         tail = curr;
         curr.setNext(null);
+        size--;
 
         return ans;
 
